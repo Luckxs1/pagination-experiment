@@ -126,3 +126,6 @@ echo "<li class='page-item' ><a class='page-link' href='?page_no=$total_no_of_pa
 
 
 <!-- https://www.allphptricks.com/create-simple-pagination-using-php-and-mysqli/ -->
+
+<!-- Crud Class OOP -->
+<!-- https://webscodex.medium.com/php-crud-add-edit-delete-view-application-using-oop-object-oriented-programming-and-mysql-d245b2a8c3b3 -->

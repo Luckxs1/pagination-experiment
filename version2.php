@@ -118,6 +118,7 @@ echo "<li class='page-item' ><a class='page-link' href='?page_no=$total_no_of_pa
 } ?>
 </ul>
  
+<a href="searching.php" class="my-2">Go Search Module</a>
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

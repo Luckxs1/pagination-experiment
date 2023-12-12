@@ -67,9 +67,10 @@
     <!-- This form -->
         <div>
         <form method="post">  
-                <label>Enter Search Text</label>  
-                <input type="text" name="search" class="form-control" value="<?php if(isset($_GET["search"])) echo $_GET["search"]; ?>" />  
-                <input type="submit" name="submit" class="btn btn-info mt-1" value="Search" />  
+        <div class="input-group mb-3">
+            <input type="submit" name="submit" class="btn btn-primary input-group-btn" id="inputGroup-sizing-default" value="Search"></a>
+            <input type="text" name="search" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="<?php if(isset($_GET["search"])) echo $_GET["search"]; ?>">
+        </div>
         </form>  
         </div>
         <!-- End form -->
@@ -135,14 +136,13 @@
     </tbody>
     </table>
 
-    <!-- Showing Current Page number out of total -->
-    <div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
-    <strong>Page <?php echo $page_no." of ".$total_no_of_pages; ?></strong>
-    </div>
+
 
     <!-- Creating Pagination Buttons -->
 
- <ul class="pagination">
+ <div class="row">
+    <div class="col-auto me-auto">
+    <ul class="pagination">
 <?php if($page_no > 1){
 echo "<li class='page-item'><a class='page-link' href='?page_no=1'>First Page</a></li>";
 } ?>
@@ -165,6 +165,15 @@ echo "href='?page_no=$next_page'";
 echo "<li class='page-item' ><a class='page-link' href='?page_no=$total_no_of_pages'>Last &rsaquo;&rsaquo;</a></li>";
 } ?>
 </ul>
+    </div>
+    <div class="col-auto">
+    <strong>Page <?php echo $page_no." of ".$total_no_of_pages; ?></strong>
+    </div>
+ </div>
+    <!-- Showing Current Page number out of total -->
+    <div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
+    
+    </div>
  
 <a href="searching.php" class="my-2">Go Search Module</a>
 </div>

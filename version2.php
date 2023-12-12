@@ -77,9 +77,9 @@
     <thead>
         <tr>
         <th style='width:50px;'>ID</th>
-        <th style='width:150px;'>Name</th>
-        <th style='width:50px;'>Age</th>
-        <th style='width:150px;'>Department</th>
+        <th style='width:150px;'>Country</th>
+        <th style='width:50px;'>ISO</th>
+        <th style='width:150px;'>Phone</th>
         </tr>
         </thead>
     <tbody>
